@@ -1,0 +1,209 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University simple personal time table </title>
+  <link rel="stylesheet" href="time-table-css/time-table.css">
+</head>
+<body>
+  <div >
+    <div class="edit-view">
+  <div class="student-info"  id="student-info">
+    <h1>Student's details </h1>
+   <lable>Student's name:</lable> <input class="name" type="text" placeholder="full name">
+   <lable>Profile-picture:</lable><input class="std-picture" type="file" accept="image\*">
+   <div class="display-img">
+    <img class="preview" alt="image">
+   </div>
+   <lable>Date:</lable>
+ <input class="date" type="date">
+
+ <lable>Department:</lable><input class="department" type="text" placeholder="department">
+ <lable>Faculty:</lable> <input class="faculty" type="text" placeholder="faculty">
+ <lable>Institution:</lable> <input class="institution" type="text" placeholder="Institution">
+ 
+  </div>
+  <div class="table-edit">
+    <h2>time table details </h2>
+    <table border="2.5px">
+      <thead>
+  <tr>
+    <th>
+      Course name
+    </th>
+    <th>
+      Course code
+    </th>
+    <th>
+      Day 
+    </th>
+    <th>
+      time from 
+    </th>
+    <th>
+      time to 
+    </th>
+  </tr>
+</thead>
+ <tbody class="table-data">
+    <tr>
+   <td>
+<input class="courseName" type="text" placeholder="course name">
+    </td>
+    <td>
+<input class="courseCode" type="text" placeholder="course code">
+    </td>
+    <td>
+     <select class="selectDay">
+  <option>
+    select day 
+  </option>
+  <option>
+    Monday
+  </option>
+  <option>
+    Tuesday
+  </option>
+  <option>
+    Wednesday
+  </option>
+  <option>
+    Thursday 
+  </option>
+  <option>
+    Friday
+  </option>
+  <option>
+    Saturday
+  </option>
+  <option>
+    Sunday 
+  </option>
+</select>
+    </td>
+    <td>
+<input class="fromTime" type="text" placeholder="time ">
+    </td>
+    <td>
+<input class="toTime" type="text" placeholder="time">
+    </td>
+  </tr>
+</tbody>
+  </table>
+   <div>
+    <h3>make changes </h3>
+    <div class="warning-area">
+    </div>
+ <button class="add-button">
+  Add
+ </button>
+   </div>
+   <div class="render-table">
+    <div>
+      <h4> Edit table </h4>
+    </div>
+ <table border=2px;>
+  <thead>
+    <tr>
+      <th>
+        Course name
+      </th>
+      <th>
+        Course code 
+      </th>
+      <th>
+        Day 
+      </th>
+      <th>
+        Time 
+      </th>
+      <th>
+        remove
+      </th>
+      </tr>
+  </thead>
+  <tbody class="display-row">
+   <!--<tr>
+      <td>
+        Mathematical Methods 
+      </td>
+      <td>
+       MTH102
+      </td>
+      <td>
+        Monday 
+      </td>
+      <td >
+        1:00pm to 2:40pm
+      </td>
+      <td >
+        <button clas="delete-btn">
+          delete
+        </button>
+      </td>
+    </tr>-->
+  </tbody>
+ </table>
+ <div class="finish-warning">
+
+ </div>
+  <button
+  class="finish"
+  >finish</button>
+   </div>
+  
+   </div>
+   </div>
+   <div  class="printed-view">
+<div class="student-details">
+  <div class="main">
+<p>personal time table </p>
+<p>Name: Sulaiman Mahmud Ibrahim</p>
+<p>Date: 04/25/2026</p>
+</div>
+<div class="sub-main">
+  <p>Institution: Bayero University, kano </p>
+<p>Department: Software Engineering </p>
+<p>Faculty: Computing </p>
+</div>
+</div>
+<div class="time-table-details">
+ <table border="2px">
+  <thead>
+    <tr>
+      <th>
+        Course 
+      </th>
+      <th>
+        Course code 
+      </th>
+      <th>
+        Day
+      </th>
+      <th>
+        TIme
+      </th>
+    </tr>
+  </thead>
+  <tbody class="report-table">
+    <tr>
+      <td>Mathematical Methods II </td>
+      <td> MTH102</td>
+      <td>Monday </td>
+      <td>4:00pm to 6:00pm</td>
+    </tr>
+
+    </tbody>
+ </table>
+ <div>
+  <button class="print">print</button>
+ <button class="modify">modify </button>
+ </div>
+</div>
+   </div>
+   <script src="time-table-js/time-table.js">
+
+   </script>
+</body>
+</html>
